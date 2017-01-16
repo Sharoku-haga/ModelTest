@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2013
+VisualStudioVersion = 12.0.40629.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "ModelTest", "ModelTest\ModelTest.vcxproj", "{65F97933-CB2C-43C9-BED3-463FF5792642}"
+	ProjectSection(ProjectDependencies) = postProject
+		{5F0CE349-FD22-47E8-B226-13BD7133E630} = {5F0CE349-FD22-47E8-B226-13BD7133E630}
+	EndProjectSection
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "MyLibrary", "MyLibrary\MyLibrary.vcxproj", "{5F0CE349-FD22-47E8-B226-13BD7133E630}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Win32 = Debug|Win32
+		Release|Win32 = Release|Win32
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{65F97933-CB2C-43C9-BED3-463FF5792642}.Debug|Win32.ActiveCfg = Debug|Win32
+		{65F97933-CB2C-43C9-BED3-463FF5792642}.Debug|Win32.Build.0 = Debug|Win32
+		{65F97933-CB2C-43C9-BED3-463FF5792642}.Release|Win32.ActiveCfg = Release|Win32
+		{65F97933-CB2C-43C9-BED3-463FF5792642}.Release|Win32.Build.0 = Release|Win32
+		{5F0CE349-FD22-47E8-B226-13BD7133E630}.Debug|Win32.ActiveCfg = Debug|Win32
+		{5F0CE349-FD22-47E8-B226-13BD7133E630}.Debug|Win32.Build.0 = Debug|Win32
+		{5F0CE349-FD22-47E8-B226-13BD7133E630}.Release|Win32.ActiveCfg = Release|Win32
+		{5F0CE349-FD22-47E8-B226-13BD7133E630}.Release|Win32.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

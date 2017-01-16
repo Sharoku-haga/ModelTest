@@ -1,0 +1,187 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="リソース ファイル">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="ModelTest">
+      <UniqueIdentifier>{dc029a2c-87a0-4813-b190-1371ac56446f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ModelTest\Scene">
+      <UniqueIdentifier>{f0acfab2-1f88-4e67-8afe-65d79d51387b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ModelTest\Scene\TitleScene">
+      <UniqueIdentifier>{4e39a177-bf7b-45d4-bc4c-08094999a894}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ModelTest\Scene\LogoScene">
+      <UniqueIdentifier>{02d4347f-f954-4b93-9fc3-d4acf8e18ec7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ModelTest\Scene\TestScene">
+      <UniqueIdentifier>{6a7c59cf-a119-4a24-82b3-0648ad746ec8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ModelTest\Button">
+      <UniqueIdentifier>{a8934a53-fc96-49a2-bf89-b75b222f9c2f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ModelTest\Object">
+      <UniqueIdentifier>{7857a7c4-a7d5-4e93-ad6e-9a8c04287be6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ModelTest\CameraController">
+      <UniqueIdentifier>{68b37b46-97af-446c-85fa-efe4068e68bd}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ModelTest\Object\Field">
+      <UniqueIdentifier>{41550611-6c3a-4673-81d0-0d94d35d6596}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ModelTest\Collision">
+      <UniqueIdentifier>{10cd6918-25e1-4548-b863-ba10a4edf6ea}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ModelTest\Effect">
+      <UniqueIdentifier>{36352f32-65af-44fb-a39a-fc906d48b958}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="main.cpp">
+      <Filter>ModelTest</Filter>
+    </ClCompile>
+    <ClCompile Include="Scene\Scene.cpp">
+      <Filter>ModelTest\Scene</Filter>
+    </ClCompile>
+    <ClCompile Include="Scene\SceneFactory.cpp">
+      <Filter>ModelTest\Scene</Filter>
+    </ClCompile>
+    <ClCompile Include="Scene\SceneManager.cpp">
+      <Filter>ModelTest\Scene</Filter>
+    </ClCompile>
+    <ClCompile Include="Scene\LogoScene\LogoScene.cpp">
+      <Filter>ModelTest\Scene\LogoScene</Filter>
+    </ClCompile>
+    <ClCompile Include="Scene\TitleScene\TitleScene.cpp">
+      <Filter>ModelTest\Scene\TitleScene</Filter>
+    </ClCompile>
+    <ClCompile Include="Scene\LogoScene\TeamLogo.cpp">
+      <Filter>ModelTest\Scene\LogoScene</Filter>
+    </ClCompile>
+    <ClCompile Include="Scene\TestScene\TestScene.cpp">
+      <Filter>ModelTest\Scene\TestScene</Filter>
+    </ClCompile>
+    <ClCompile Include="Scene\TitleScene\TitleBackground.cpp">
+      <Filter>ModelTest\Scene\TitleScene</Filter>
+    </ClCompile>
+    <ClCompile Include="Button\Button.cpp">
+      <Filter>ModelTest\Button</Filter>
+    </ClCompile>
+    <ClCompile Include="Button\PushOnlyButton.cpp">
+      <Filter>ModelTest\Button</Filter>
+    </ClCompile>
+    <ClCompile Include="Object\Object.cpp">
+      <Filter>ModelTest\Object</Filter>
+    </ClCompile>
+    <ClCompile Include="Object\ObjectManager.cpp">
+      <Filter>ModelTest\Object</Filter>
+    </ClCompile>
+    <ClCompile Include="CameraController\CameraController.cpp">
+      <Filter>ModelTest\CameraController</Filter>
+    </ClCompile>
+    <ClCompile Include="Object\Player.cpp">
+      <Filter>ModelTest\Object</Filter>
+    </ClCompile>
+    <ClCompile Include="Object\Chips.cpp">
+      <Filter>ModelTest\Object</Filter>
+    </ClCompile>
+    <ClCompile Include="Object\Field\Field.cpp">
+      <Filter>ModelTest\Object\Field</Filter>
+    </ClCompile>
+    <ClCompile Include="Object\Field\FieldManager.cpp">
+      <Filter>ModelTest\Object\Field</Filter>
+    </ClCompile>
+    <ClCompile Include="Object\Field\Ground.cpp">
+      <Filter>ModelTest\Object\Field</Filter>
+    </ClCompile>
+    <ClCompile Include="Collision\BoundingSphere.cpp">
+      <Filter>ModelTest\Collision</Filter>
+    </ClCompile>
+    <ClCompile Include="Collision\Collision.cpp">
+      <Filter>ModelTest\Collision</Filter>
+    </ClCompile>
+    <ClCompile Include="Effect\Effect.cpp">
+      <Filter>ModelTest\Effect</Filter>
+    </ClCompile>
+    <ClCompile Include="Effect\Explosion.cpp">
+      <Filter>ModelTest\Effect</Filter>
+    </ClCompile>
+    <ClCompile Include="Effect\EffectManager.cpp">
+      <Filter>ModelTest\Effect</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Scene\Scene.h">
+      <Filter>ModelTest\Scene</Filter>
+    </ClInclude>
+    <ClInclude Include="Scene\SceneFactory.h">
+      <Filter>ModelTest\Scene</Filter>
+    </ClInclude>
+    <ClInclude Include="Scene\SceneManager.h">
+      <Filter>ModelTest\Scene</Filter>
+    </ClInclude>
+    <ClInclude Include="Scene\LogoScene\LogoScene.h">
+      <Filter>ModelTest\Scene\LogoScene</Filter>
+    </ClInclude>
+    <ClInclude Include="Scene\TitleScene\TitleScene.h">
+      <Filter>ModelTest\Scene\TitleScene</Filter>
+    </ClInclude>
+    <ClInclude Include="Scene\LogoScene\TeamLogo.h">
+      <Filter>ModelTest\Scene\LogoScene</Filter>
+    </ClInclude>
+    <ClInclude Include="Scene\TestScene\TestScene.h">
+      <Filter>ModelTest\Scene\TestScene</Filter>
+    </ClInclude>
+    <ClInclude Include="Scene\TitleScene\TitleBackground.h">
+      <Filter>ModelTest\Scene\TitleScene</Filter>
+    </ClInclude>
+    <ClInclude Include="Button\Button.h">
+      <Filter>ModelTest\Button</Filter>
+    </ClInclude>
+    <ClInclude Include="Button\PushOnlyButton.h">
+      <Filter>ModelTest\Button</Filter>
+    </ClInclude>
+    <ClInclude Include="Object\Object.h">
+      <Filter>ModelTest\Object</Filter>
+    </ClInclude>
+    <ClInclude Include="Object\ObjectManager.h">
+      <Filter>ModelTest\Object</Filter>
+    </ClInclude>
+    <ClInclude Include="CameraController\CameraController.h">
+      <Filter>ModelTest\CameraController</Filter>
+    </ClInclude>
+    <ClInclude Include="Object\Player.h">
+      <Filter>ModelTest\Object</Filter>
+    </ClInclude>
+    <ClInclude Include="Object\Chips.h">
+      <Filter>ModelTest\Object</Filter>
+    </ClInclude>
+    <ClInclude Include="Object\Field\Field.h">
+      <Filter>ModelTest\Object\Field</Filter>
+    </ClInclude>
+    <ClInclude Include="Object\Field\FieldManager.h">
+      <Filter>ModelTest\Object\Field</Filter>
+    </ClInclude>
+    <ClInclude Include="Collision\BoundingSphere.h">
+      <Filter>ModelTest\Collision</Filter>
+    </ClInclude>
+    <ClInclude Include="Object\Field\Ground.h">
+      <Filter>ModelTest\Object\Field</Filter>
+    </ClInclude>
+    <ClInclude Include="Collision\Collision.h">
+      <Filter>ModelTest\Collision</Filter>
+    </ClInclude>
+    <ClInclude Include="Effect\Effect.h">
+      <Filter>ModelTest\Effect</Filter>
+    </ClInclude>
+    <ClInclude Include="Effect\Explosion.h">
+      <Filter>ModelTest\Effect</Filter>
+    </ClInclude>
+    <ClInclude Include="Effect\EffectManager.h">
+      <Filter>ModelTest\Effect</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>

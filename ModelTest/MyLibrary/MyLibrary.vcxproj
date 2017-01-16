@@ -1,0 +1,119 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="12.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{5F0CE349-FD22-47E8-B226-13BD7133E630}</ProjectGuid>
+    <RootNamespace>MyLibrary</RootNamespace>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v120</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v120</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <IncludePath>$(DXSDK_DIR)include;$(IncludePath)</IncludePath>
+    <LibraryPath>$(DXSDK_DIR)Lib\x86;$(LibraryPath)</LibraryPath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <IncludePath>$(DXSDK_DIR)include;$(IncludePath)</IncludePath>
+    <LibraryPath>$(DXSDK_DIR)Lib\x86;$(LibraryPath)</LibraryPath>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <SDLCheck>true</SDLCheck>
+    </ClCompile>
+    <Link>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+    </ClCompile>
+    <Link>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="Camera\Camera.cpp" />
+    <ClCompile Include="Font\Font.cpp" />
+    <ClCompile Include="GameLib\GameLib.cpp" />
+    <ClCompile Include="GameLib\Lib\AnimationInfo.cpp" />
+    <ClCompile Include="GameLib\Lib\AnimationInfoManager.cpp" />
+    <ClCompile Include="GameLib\Lib\DebugFont.cpp" />
+    <ClCompile Include="GameLib\Lib\DebugTimer.cpp" />
+    <ClCompile Include="GameLib\Lib\GraphicsDevice.cpp" />
+    <ClCompile Include="GameLib\Lib\InputDevice.cpp" />
+    <ClCompile Include="GameLib\Lib\InputKey.cpp" />
+    <ClCompile Include="GameLib\Lib\InputMouse.cpp" />
+    <ClCompile Include="GameLib\Lib\SoundFileManager.cpp" />
+    <ClCompile Include="GameLib\Lib\TextureManager.cpp" />
+    <ClCompile Include="GameLib\Lib\Vertex.cpp" />
+    <ClCompile Include="GameLib\Lib\VertexManager.cpp" />
+    <ClCompile Include="GameLib\Lib\WindowCreator.cpp" />
+    <ClCompile Include="GameLib\Lib\XFile.cpp" />
+    <ClCompile Include="GameLib\Lib\XFileManager.cpp" />
+    <ClCompile Include="Light\Light.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Camera\Camera.h" />
+    <ClInclude Include="Font\Font.h" />
+    <ClInclude Include="GameLib\GameLib.h" />
+    <ClInclude Include="GameLib\Lib\AnimationInfo.h" />
+    <ClInclude Include="GameLib\Lib\AnimationInfoManager.h" />
+    <ClInclude Include="GameLib\Lib\DebugFont.h" />
+    <ClInclude Include="GameLib\Lib\DebugTimer.h" />
+    <ClInclude Include="GameLib\Lib\GraphicsDevice.h" />
+    <ClInclude Include="GameLib\Lib\InputDevice.h" />
+    <ClInclude Include="GameLib\Lib\InputKey.h" />
+    <ClInclude Include="GameLib\Lib\InputMouse.h" />
+    <ClInclude Include="GameLib\Lib\SoundFileManager.h" />
+    <ClInclude Include="GameLib\Lib\TextureManager.h" />
+    <ClInclude Include="GameLib\Lib\Vertex.h" />
+    <ClInclude Include="GameLib\Lib\VertexManager.h" />
+    <ClInclude Include="GameLib\Lib\WindowCreator.h" />
+    <ClInclude Include="GameLib\Lib\XFile.h" />
+    <ClInclude Include="GameLib\Lib\XFileManager.h" />
+    <ClInclude Include="Light\Light.h" />
+    <ClInclude Include="MyLibrary.h" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>
