@@ -1,6 +1,6 @@
-/**
+ï»¿/**
 * @file		SceneManager.cpp
-* @brief	SceneManagerƒNƒ‰ƒXÀ‘•
+* @brief	SceneManagerã‚¯ãƒ©ã‚¹å®Ÿè£…
 * @author	haga
 */
 
@@ -77,8 +77,8 @@ void SceneManager::Control()
 			}
 		}
 		else
-		{	// ƒV[ƒ“‚ª‚Â‚­‚ç‚ê‚Ä‚¢‚È‚©‚Á‚½‚çƒQ[ƒ€‚ğI—¹‚·‚é
-			MessageBox(0, "ƒV[ƒ“ì¬‚É¸”s‚µ‚Ä‚¢‚Ü‚·B", NULL, MB_OK);
+		{	// ã‚·ãƒ¼ãƒ³ãŒã¤ãã‚‰ã‚Œã¦ã„ãªã‹ã£ãŸã‚‰ã‚²ãƒ¼ãƒ ã‚’çµ‚äº†ã™ã‚‹
+			MessageBox(0, "ã‚·ãƒ¼ãƒ³ä½œæˆã«å¤±æ•—ã—ã¦ã„ã¾ã™ã€‚", NULL, MB_OK);
 			m_NextSceneID = Scene::ID::GAME_END;
 			m_Step = SCENE_CREATE;
 		}

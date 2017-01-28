@@ -1,6 +1,6 @@
-/**
+ï»¿/**
 * @file		main.cpp
-* @brief	ƒ‚ƒfƒ‹ƒeƒXƒgƒvƒƒOƒ‰ƒ€
+* @brief	ãƒ¢ãƒ‡ãƒ«ãƒ†ã‚¹ãƒˆãƒ—ãƒ­ã‚°ãƒ©ãƒ 
 * @author	haga
 */
 
@@ -17,27 +17,27 @@
 //Defines
 //------------------------------------------------------------------------------------------------------------//
 
-#define WINDOW_MODE							// ƒEƒBƒ“ƒhƒEƒ‚[ƒh(’Êí)
-#define GAME_TITLE TEXT("ƒ‚ƒfƒ‹ƒeƒXƒg")		// ƒvƒƒOƒ‰ƒ€ƒ^ƒCƒgƒ‹
-#define CLIENT_W 1600						// ƒNƒ‰ƒCƒAƒ“ƒg—Ìˆæ‚Ì•
-#define CLIENT_H 900						// ƒNƒ‰ƒCƒAƒ“ƒg—Ìˆæ‚Ì‚‚³
+#define WINDOW_MODE							// ã‚¦ã‚£ãƒ³ãƒ‰ã‚¦ãƒ¢ãƒ¼ãƒ‰(é€šå¸¸)
+#define GAME_TITLE TEXT("ãƒ¢ãƒ‡ãƒ«ãƒ†ã‚¹ãƒˆ")		// ãƒ—ãƒ­ã‚°ãƒ©ãƒ ã‚¿ã‚¤ãƒˆãƒ«
+#define CLIENT_W 1600						// ã‚¯ãƒ©ã‚¤ã‚¢ãƒ³ãƒˆé ˜åŸŸã®å¹…
+#define CLIENT_H 900						// ã‚¯ãƒ©ã‚¤ã‚¢ãƒ³ãƒˆé ˜åŸŸã®é«˜ã•
 #define GAME_FPS (1000 / 60)				// FPS
 
 //------------------------------------------------------------------------------------------------------------//
 //Function prototype
 //------------------------------------------------------------------------------------------------------------//
 
-// ƒEƒCƒ“ƒhƒEƒvƒƒV[ƒWƒƒ
+// ã‚¦ã‚¤ãƒ³ãƒ‰ã‚¦ãƒ—ãƒ­ã‚·ãƒ¼ã‚¸ãƒ£
 LRESULT CALLBACK WindowProc(HWND hWnd, UINT message, WPARAM wParam, LPARAM lParam);
 
 //------------------------------------------------------------------------------------------------------------//
 //EntryPoint
 //------------------------------------------------------------------------------------------------------------//
 
-// ƒGƒ“ƒgƒŠƒ|ƒCƒ“ƒg
+// ã‚¨ãƒ³ãƒˆãƒªãƒã‚¤ãƒ³ãƒˆ
 int WINAPI WinMain(HINSTANCE hInstance, HINSTANCE hPrevInstance, LPTSTR lpCmdLine, int nCmdShow)
 {
-	// ƒƒ‚ƒŠƒŠ[ƒNŒŸo
+	// ãƒ¡ãƒ¢ãƒªãƒªãƒ¼ã‚¯æ¤œå‡º
 	_CrtSetDbgFlag(_CRTDBG_ALLOC_MEM_DF | _CRTDBG_LEAK_CHECK_DF);
 
 	MSG msg;
@@ -59,8 +59,8 @@ int WINAPI WinMain(HINSTANCE hInstance, HINSTANCE hPrevInstance, LPTSTR lpCmdLin
 
 	SceneManager* pSceneManager = new SceneManager();
 
-	DWORD currentTime;						// Œ»İ‚ÌŠÔ
-	DWORD oldTime = timeGetTime();			// ‘O‚ÌŠÔ
+	DWORD currentTime;						// ç¾åœ¨ã®æ™‚é–“
+	DWORD oldTime = timeGetTime();			// å‰ã®æ™‚é–“
 
 	ZeroMemory(&msg, sizeof(msg));
 	while(msg.message != WM_QUIT)
@@ -85,7 +85,7 @@ int WINAPI WinMain(HINSTANCE hInstance, HINSTANCE hPrevInstance, LPTSTR lpCmdLin
 	}
 
 	delete pSceneManager;
-	GameLib::Instance().ReleaseGameLib();	// ƒ‰ƒCƒuƒ‰ƒŠ“à‚Ìƒƒ‚ƒŠŠJ•ú
+	GameLib::Instance().ReleaseGameLib();	// ãƒ©ã‚¤ãƒ–ãƒ©ãƒªå†…ã®ãƒ¡ãƒ¢ãƒªé–‹æ”¾
 
 	return (INT)msg.wParam;
 }
@@ -94,7 +94,7 @@ int WINAPI WinMain(HINSTANCE hInstance, HINSTANCE hPrevInstance, LPTSTR lpCmdLin
 //Functions
 //-----------------------------------------------------------------------------------------------------------//
 
-// ƒEƒCƒ“ƒhƒEƒvƒƒV[ƒWƒƒŠÖ”
+// ã‚¦ã‚¤ãƒ³ãƒ‰ã‚¦ãƒ—ãƒ­ã‚·ãƒ¼ã‚¸ãƒ£é–¢æ•°
 LRESULT CALLBACK WindowProc(HWND hwnd, UINT message, WPARAM wparam, LPARAM lparam)
 {
 	switch(message)
@@ -110,7 +110,7 @@ LRESULT CALLBACK WindowProc(HWND hwnd, UINT message, WPARAM wparam, LPARAM lpara
 		{
 		case VK_ESCAPE:
 		{
-			int answer = MessageBox(hwnd, TEXT("I‚í‚è‚Ü‚·‚©H"), TEXT("I—¹"), MB_YESNO);
+			int answer = MessageBox(hwnd, TEXT("çµ‚ã‚ã‚Šã¾ã™ã‹ï¼Ÿ"), TEXT("çµ‚äº†"), MB_YESNO);
 			if(answer == IDYES)
 			{
 				PostQuitMessage(0);
@@ -122,10 +122,10 @@ LRESULT CALLBACK WindowProc(HWND hwnd, UINT message, WPARAM wparam, LPARAM lpara
 		}
 		break;
 
-	case WM_SYSKEYDOWN:     // Alt + “ÁêƒL[‚Ìˆ—‚Ég‚¤
+	case WM_SYSKEYDOWN:     // Alt + ç‰¹æ®Šã‚­ãƒ¼ã®å‡¦ç†ã«ä½¿ã†
 		switch((CHAR)wparam)
 		{
-		case VK_RETURN:     // Alt + Enter‚ğ‰Ÿ‚·‚ÆƒEƒBƒ“ƒhƒEØ‚è‘Ö‚¦
+		case VK_RETURN:     // Alt + Enterã‚’æŠ¼ã™ã¨ã‚¦ã‚£ãƒ³ãƒ‰ã‚¦åˆ‡ã‚Šæ›¿ãˆ
 			GameLib::Instance().ChangeWindowMode();
 			break;
 		default:

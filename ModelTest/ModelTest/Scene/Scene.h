@@ -1,6 +1,6 @@
-/**
+ï»¿/**
 * @file		Scene.h
-* @brief	SceneƒNƒ‰ƒXƒwƒbƒ_
+* @brief	Sceneã‚¯ãƒ©ã‚¹ãƒ˜ãƒƒãƒ€
 * @author	haga
 */
 #ifndef SCENE_H
@@ -9,39 +9,39 @@
 class GameLib;
 
 /**
-* —lX‚ÈƒV[ƒ“‚ÌŠî’êƒNƒ‰ƒX
+* æ§˜ã€…ãªã‚·ãƒ¼ãƒ³ã®åŸºåº•ã‚¯ãƒ©ã‚¹
 */
 class Scene
 {
 
 public:
-	/**SCENE‚ÌID*/
+	/**SCENEã®ID*/
 	enum ID
 	{
-		LOGO,			//!< ƒƒSƒV[ƒ“
-		TITLE,			//!< ƒ^ƒCƒgƒ‹ƒV[ƒ“
-		GAME,			//!< ƒQ[ƒ€ƒV[ƒ“
-		TEST,			//!< Õ“Ë”»’èƒeƒXƒgƒV[ƒ“
+		LOGO,			//!< ãƒ­ã‚´ã‚·ãƒ¼ãƒ³
+		TITLE,			//!< ã‚¿ã‚¤ãƒˆãƒ«ã‚·ãƒ¼ãƒ³
+		GAME,			//!< ã‚²ãƒ¼ãƒ ã‚·ãƒ¼ãƒ³
+		TEST,			//!< è¡çªåˆ¤å®šãƒ†ã‚¹ãƒˆã‚·ãƒ¼ãƒ³
 		GAME_END
 	};
 
-	/**ƒRƒ“ƒXƒgƒ‰ƒNƒ^*/
+	/**ã‚³ãƒ³ã‚¹ãƒˆãƒ©ã‚¯ã‚¿*/
 	Scene();
 
-	/**ƒfƒXƒgƒ‰ƒNƒ^*/
+	/**ãƒ‡ã‚¹ãƒˆãƒ©ã‚¯ã‚¿*/
 	virtual~Scene();
 
 	/**
-	* ƒRƒ“ƒgƒ[ƒ‹ŠÖ”
-	* @return Scene::ID	Ÿ‚ÌƒV[ƒ“‚ÌID
+	* ã‚³ãƒ³ãƒˆãƒ­ãƒ¼ãƒ«é–¢æ•°
+	* @return Scene::ID	æ¬¡ã®ã‚·ãƒ¼ãƒ³ã®ID
 	*/
 	virtual Scene::ID Control() = 0;
 
-	/**•`‰æŠÖ”*/
+	/**æç”»é–¢æ•°*/
 	virtual void Draw() = 0;
 
 protected:
-	GameLib& m_rGameLib;		//!< ƒ‰ƒCƒuƒ‰ƒŠ
+	GameLib& m_rGameLib;		//!< ãƒ©ã‚¤ãƒ–ãƒ©ãƒª
 
 };
 

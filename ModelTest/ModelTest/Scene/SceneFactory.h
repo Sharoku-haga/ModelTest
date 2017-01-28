@@ -1,6 +1,6 @@
-/**
+ï»¿/**
 * @file		SceneFactory.h
-* @brief	SceneFactoryƒNƒ‰ƒXƒwƒbƒ_
+* @brief	SceneFactoryã‚¯ãƒ©ã‚¹ãƒ˜ãƒƒãƒ€
 * @author	haga
 */
 #ifndef SCENE_FACTORY_H
@@ -13,9 +13,9 @@ class SceneFactory
 
 public:
 	/**
-	* À‘Ì‚ğæ“¾‚·‚éŠÖ” 
-	* Singletonƒpƒ^[ƒ“
-	* @return SceneFactory SceneFactoryƒNƒ‰ƒX‚ÌÀ‘Ì 
+	* å®Ÿä½“ã‚’å–å¾—ã™ã‚‹é–¢æ•° 
+	* Singletonãƒ‘ã‚¿ãƒ¼ãƒ³
+	* @return SceneFactory SceneFactoryã‚¯ãƒ©ã‚¹ã®å®Ÿä½“ 
 	*/
 	static SceneFactory& Instance()
 	{
@@ -25,19 +25,19 @@ public:
 	}
 
 	/**
-	* SceneƒNƒ‰ƒX‚ÌŒp³ƒNƒ‰ƒX‚ğ¶¬‚·‚éŠÖ”
-	* @param	sceneID		¶¬‚µ‚½ƒV[ƒ“‚ÌID
-	* @param	Scene*		SceneƒNƒ‰ƒX‚ÌƒCƒ“ƒXƒ^ƒ“ƒX‚Ö‚Ìƒ|ƒCƒ“ƒ^
+	* Sceneã‚¯ãƒ©ã‚¹ã®ç¶™æ‰¿ã‚¯ãƒ©ã‚¹ã‚’ç”Ÿæˆã™ã‚‹é–¢æ•°
+	* @param	sceneID		ç”Ÿæˆã—ãŸã‚·ãƒ¼ãƒ³ã®ID
+	* @param	Scene*		Sceneã‚¯ãƒ©ã‚¹ã®ã‚¤ãƒ³ã‚¹ã‚¿ãƒ³ã‚¹ã¸ã®ãƒã‚¤ãƒ³ã‚¿
 	*/
 	Scene* CreateScene(Scene::ID  sceneID);
 
-	/**ƒfƒXƒgƒ‰ƒNƒ^*/
+	/**ãƒ‡ã‚¹ãƒˆãƒ©ã‚¯ã‚¿*/
 	~SceneFactory();
 
 private:
 	/**
-	* ƒRƒ“ƒXƒgƒ‰ƒNƒ^
-	* Singletonƒpƒ^[ƒ“‚Ìˆ×private
+	* ã‚³ãƒ³ã‚¹ãƒˆãƒ©ã‚¯ã‚¿
+	* Singletonãƒ‘ã‚¿ãƒ¼ãƒ³ã®ç‚ºprivate
 	*/
 	SceneFactory();
 

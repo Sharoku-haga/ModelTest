@@ -1,6 +1,6 @@
-/**
+ï»¿/**
 * @file		SceneFactory.cpp
-* @brief	SceneFactoryƒNƒ‰ƒXŽÀ‘•
+* @brief	SceneFactoryã‚¯ãƒ©ã‚¹å®Ÿè£…
 * @author	haga
 */
 
