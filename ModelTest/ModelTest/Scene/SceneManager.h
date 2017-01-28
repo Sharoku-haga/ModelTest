@@ -1,6 +1,6 @@
-/**
+ï»¿/**
 * @file		SceneManager.h
-* @brief	SceneManagerƒNƒ‰ƒXƒwƒbƒ_ 
+* @brief	SceneManagerã‚¯ãƒ©ã‚¹ãƒ˜ãƒƒãƒ€ 
 * @author	haga
 */
 #ifndef SCENE_MANAGER_H
@@ -12,34 +12,34 @@ class SceneManager
 {
 
 public:
-	/**ƒRƒ“ƒXƒgƒ‰ƒNƒ^*/
+	/**ã‚³ãƒ³ã‚¹ãƒˆãƒ©ã‚¯ã‚¿*/
 	SceneManager();
 
-	/**ƒfƒXƒgƒ‰ƒNƒ^*/
+	/**ãƒ‡ã‚¹ãƒˆãƒ©ã‚¯ã‚¿*/
 	~SceneManager();
 
-	/**ÀsŠÖ”*/
+	/**å®Ÿè¡Œé–¢æ•°*/
 	bool Run();
 
 private:
-	/**ˆ—ƒXƒeƒbƒv*/
+	/**å‡¦ç†ã‚¹ãƒ†ãƒƒãƒ—*/
 	enum STEP
 	{
-		SCENE_CREATE,	// ¶¬
-		SCENE_RUN,		// Às
-		SCENE_DELETE	// ”jŠü
+		SCENE_CREATE,	// ç”Ÿæˆ
+		SCENE_RUN,		// å®Ÿè¡Œ
+		SCENE_DELETE	// ç ´æ£„
 	};
 
-	Scene*      m_pScene;				//!< SceneƒNƒ‰ƒX‚ÌƒCƒ“ƒXƒ^ƒ“ƒX‚Ö‚Ìƒ|ƒCƒ“ƒ^
-	STEP		m_Step;					//!< ˆ—ƒXƒeƒbƒv‚ğŠi”[‚·‚é•Ï”
-	Scene::ID 	m_CurrentSceneID;		//!< Œ»İ‚ÌƒV[ƒ“ID‚ğŠi”[‚·‚é•Ï”
-	Scene::ID 	m_NextSceneID;			//!< Ÿ‚ÌƒV[ƒ“ID‚ğŠi”[‚·‚é•Ï”
-	bool		m_IsEnd;				//!< I—¹‚µ‚½‚©‚Ç‚¤‚©‚Ìƒtƒ‰ƒO
+	Scene*      m_pScene;				//!< Sceneã‚¯ãƒ©ã‚¹ã®ã‚¤ãƒ³ã‚¹ã‚¿ãƒ³ã‚¹ã¸ã®ãƒã‚¤ãƒ³ã‚¿
+	STEP		m_Step;					//!< å‡¦ç†ã‚¹ãƒ†ãƒƒãƒ—ã‚’æ ¼ç´ã™ã‚‹å¤‰æ•°
+	Scene::ID 	m_CurrentSceneID;		//!< ç¾åœ¨ã®ã‚·ãƒ¼ãƒ³IDã‚’æ ¼ç´ã™ã‚‹å¤‰æ•°
+	Scene::ID 	m_NextSceneID;			//!< æ¬¡ã®ã‚·ãƒ¼ãƒ³IDã‚’æ ¼ç´ã™ã‚‹å¤‰æ•°
+	bool		m_IsEnd;				//!< çµ‚äº†ã—ãŸã‹ã©ã†ã‹ã®ãƒ•ãƒ©ã‚°
 
-	/**ƒRƒ“ƒgƒ[ƒ‹ŠÖ”*/
+	/**ã‚³ãƒ³ãƒˆãƒ­ãƒ¼ãƒ«é–¢æ•°*/
 	void Control();
 
-	/**•`‰æŠÖ”*/
+	/**æç”»é–¢æ•°*/
 	void Draw();
 
 };

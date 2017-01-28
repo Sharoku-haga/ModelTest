@@ -50,7 +50,7 @@ public:
 	/**コンストラクタ*/
 	TestScene();
 
-	/**dデストラクタ*/
+	/**デストラクタ*/
 	virtual ~TestScene();
 
 	/**

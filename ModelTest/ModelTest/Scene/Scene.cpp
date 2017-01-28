@@ -1,6 +1,6 @@
-/**
+ï»¿/**
 * @file		Scene.cpp
-* @brief	SceneƒNƒ‰ƒXŽÀ‘•
+* @brief	Sceneã‚¯ãƒ©ã‚¹å®Ÿè£…
 * @author	haga
 */
 
